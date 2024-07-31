@@ -1,0 +1,71 @@
+@import "../../common/styles/variables";
+
+.filled {
+  width: 100%;
+  padding: 6px;
+  background: $orange;
+  border: 1px solid $orange;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $white;
+    color: $orange;
+  }
+
+  &:disabled {
+    border: 1px solid $dark_2;
+    background: $dark_2;
+    color: $white;
+  }
+}
+
+.empty {
+  width: 100%;
+  padding: 6px;
+  background: $white;
+  border: 1px solid $orange;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $orange;
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $orange;
+    color: $white;
+  }
+
+  &:disabled {
+    border: 1px solid $dark_2;
+    background: $white;
+    color: $dark_2;
+  }
+}

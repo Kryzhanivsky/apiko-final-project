@@ -1,0 +1,33 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  max-width: 480px;
+  padding: 70px 85px 115px;
+  background: $white;
+  box-shadow: 0 2px 42px rgba(0, 0, 0, 0.111233);
+  border-radius: 7px;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  text-align: center;
+
+  h1 {
+    margin: 0 0 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: $text_dark;
+  }
+
+  p {
+    margin: 0 0 38px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text_dark_2;
+  }
+
+  button:nth-child(3) {
+    margin: 0 0 18px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  max-width: 377px;
+  margin: 0 auto;
+  padding: 210px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: $text_1;
+  }
+
+  p {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: $text_dark_2;
+  }
+}

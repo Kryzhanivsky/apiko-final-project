@@ -1,0 +1,22 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: $bg;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  padding: 51px 0 0 0;
+
+  @media screen and (min-width: 425px) {
+    padding: 72px 0 0 0;
+  }
+}

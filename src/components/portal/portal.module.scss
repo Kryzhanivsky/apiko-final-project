@@ -1,0 +1,35 @@
+@import "../../common/styles/variables";
+
+.background {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: $modal_bg;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

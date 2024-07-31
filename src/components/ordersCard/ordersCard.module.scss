@@ -1,0 +1,48 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 20px;
+  background: $white;
+  border: 1px solid $line_2;
+  box-shadow: 0 4px 14px rgba(121, 121, 121, 0.0527344);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+
+  p {
+    min-width: 75px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $gray_3;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $dark_1;
+  }
+
+  .id {
+    color: $blue;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  max-width: 890px;
+  margin: 0 auto 85px;
+  padding: 0 15px;
+}
+
+.actions {
+  background: $white;
+  padding: 12px 27px;
+  margin: 20px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-columns: 35.98% 35.98% 22.58%;
+  grid-template-rows: 37px;
+  grid-gap: 22px;
+}

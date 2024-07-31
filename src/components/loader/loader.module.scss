@@ -1,0 +1,117 @@
+@import "../../common/styles/variables";
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $modal_bg;
+
+  & .ldsSpinner div:after {
+    background: $white;
+  }
+
+  & .text {
+    color: $white;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 50px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .ldsSpinner div:after {
+    background: $dark_1;
+  }
+
+  & .text {
+    color: $dark_1;
+  }
+}
+
+.ldsSpinner {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 0 38px;
+
+  div {
+    transform-origin: 45px 45px;
+    animation: ldsSpinner 0.8s linear infinite;
+
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 40px;
+      width: 10px;
+      height: 24px;
+      border-radius: 5px;
+    }
+    &:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -0.7s;
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+      animation-delay: -0.6s;
+    }
+    &:nth-child(3) {
+      transform: rotate(90deg);
+      animation-delay: -0.5s;
+    }
+    &:nth-child(4) {
+      transform: rotate(135deg);
+      animation-delay: -0.4s;
+    }
+    &:nth-child(5) {
+      transform: rotate(180deg);
+      animation-delay: -0.3s;
+    }
+    &:nth-child(6) {
+      transform: rotate(225deg);
+      animation-delay: -0.2s;
+    }
+    &:nth-child(7) {
+      transform: rotate(270deg);
+      animation-delay: -0.1s;
+    }
+    &:nth-child(8) {
+      transform: rotate(315deg);
+      animation-delay: 0s;
+    }
+  }
+}
+
+.text {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+@keyframes ldsSpinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

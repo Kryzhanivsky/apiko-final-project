@@ -1,0 +1,143 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  height: 160px;
+  padding: 15px 20px;
+  background: $white;
+  border: 1px solid #eceef0;
+  box-shadow: 0 4px 14px rgba(121, 121, 121, 0.0527344);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin: 0 0 23px;
+  }
+}
+
+.info {
+  flex: 1;
+  height: 100%;
+  border-right: 1px solid $line_2;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.imgWrapper {
+  min-width: 125px;
+  max-width: 125px;
+  height: 100%;
+
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+}
+
+.data {
+  height: 100%;
+  margin: 0 20px;
+}
+
+.name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 28px;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text_dark;
+}
+
+.actions {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  & > span {
+    margin: 0 10px;
+  }
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
+.action {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: $dark_3;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    width: 10px;
+    height: 1px;
+    background: $dark_2;
+  }
+
+  span:nth-child(1) {
+    transform: translateX(-50%);
+  }
+
+  span:nth-child(2) {
+    left: calc(50% - 5px);
+    transform: rotate(90deg);
+  }
+
+  &:disabled {
+    background: $dark_2;
+
+    span {
+      background: $dark_3;
+    }
+  }
+}
+
+.total {
+  width: 105px;
+  padding: 0 0 0 25px;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+
+  p {
+    margin: 0 0 7px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text_dark_2;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: $dark_1;
+  }
+}

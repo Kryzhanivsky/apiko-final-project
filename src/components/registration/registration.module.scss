@@ -1,0 +1,42 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 425px;
+  min-height: 365px;
+  padding: 40px 30px;
+  margin: 0 0 15px;
+  background: $white;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+
+  & label {
+    margin: 0 0 20px;
+  }
+}
+
+.title {
+  margin: 0 0 48px;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: $dark_1;
+}
+
+.remark {
+  padding: 30px 30px 20px;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: center;
+
+  span {
+    color: $orange;
+  }
+}

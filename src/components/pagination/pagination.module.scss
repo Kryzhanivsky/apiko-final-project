@@ -1,0 +1,28 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 6px 33px;
+  background: $blue;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: $white;
+
+  &:hover {
+    opacity: 80%;
+  }
+}

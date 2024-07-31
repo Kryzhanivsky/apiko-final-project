@@ -1,0 +1,110 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  background: $white;
+  border: 1.08px solid #e4e4e4;
+  box-shadow: 0 5px 15px rgba(121, 121, 121, 0.0527344);
+}
+
+.top {
+  padding: 62px 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  margin: 0 0 8px;
+  border-radius: 50%;
+  background: $gray_5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $text_dark;
+}
+
+.name {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+
+  color: $text_dark;
+}
+
+.navigation {
+  position: relative;
+  width: 100%;
+  max-width: 489px;
+  margin: 0 auto 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  button {
+    &:nth-child(1).active ~ .activeBtn {
+      left: 0;
+    }
+    &:nth-child(2).active ~ .activeBtn {
+      left: 33.33%;
+    }
+    &:nth-child(3).active ~ .activeBtn {
+      left: 66.66%;
+    }
+  }
+}
+
+.navBtn {
+  position: relative;
+  z-index: 2;
+  flex: 33.33%;
+  height: 74px;
+  background: transparent;
+  border: 1.3px solid $gray_5;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: $text_dark_2;
+  transition: all 0.2s ease;
+
+  &.active {
+    color: $white;
+    border: 1.3px solid transparent;
+  }
+}
+
+.activeBtn {
+  position: absolute;
+  width: 33.33%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}

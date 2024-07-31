@@ -1,0 +1,46 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  & > label {
+    min-width: 220px;
+    margin: 0 0 25px;
+  }
+
+  & > button:not(:last-child) {
+    margin: 0 0 18px;
+  }
+}
+
+.total {
+  margin: 0 0 45px 0;
+
+  div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+
+    &:not(:last-child) {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  p {
+    width: 136px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    color: $gray_3;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    color: $dark_1;
+  }
+}

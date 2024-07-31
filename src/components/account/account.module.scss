@@ -1,0 +1,134 @@
+@import "../../common/styles/variables";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0 15px 0 0;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: $white;
+}
+
+.avatar {
+  width: 40px;
+  height: 38px;
+  margin: 0 11px 0 0;
+  background: $gray_5;
+  border: 2px solid $orange;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text_5;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transform: scaleY(1);
+  background: transparent;
+  border: none;
+  transition: all 0.2s ease;
+
+  &.active {
+    transform: scaleY(-1);
+  }
+}
+
+.popup {
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 17px);
+  right: 0;
+  pointer-events: none;
+
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.top {
+  padding: 17px 16px;
+  border-bottom: 1px solid #e4e4e4;
+  cursor: pointer;
+}
+
+.name {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.4px;
+  color: $dark_1;
+}
+
+.email {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.4px;
+  color: $dark_2;
+}
+
+.basement {
+  padding: 10px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: $dark_1;
+
+    &:not(:last-child) {
+      margin: 0 0 14px;
+    }
+  }
+
+  .logout {
+    color: $red;
+  }
+}
